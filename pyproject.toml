@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nfl-defense-tracker"
+version = "0.1.0"
+description = "Local terminal football tracking and defensive alignment reports"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["opencv-python-headless>=4.10,<5"]
+
+[project.scripts]
+defense-lab = "defense_tracker:main"
+
+[tool.setuptools]
+py-modules = ["defense_tracker"]
